@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="31px" height="36px" viewBox="0 0 31 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Graphic</title>
+    <defs>
+        <polygon id="path-1" points="0 0.2 18.5194805 0.2 18.5194805 16.2 0 16.2"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Events-Pass-Landing-Page" transform="translate(-264.000000, -163.000000)">
+            <g id="Graphic" transform="translate(264.000000, 163.000000)">
+                <polygon id="Path-3-Copy-2" fill="#000000" transform="translate(20.861953, 26.657134) rotate(8.000000) translate(-20.861953, -26.657134) " points="11.9987579 34.6660154 29.7251488 18.6482523 29.71083 34.6502647"></polygon>
+                <g id="Group-3" opacity="0.400000006" transform="translate(12.181613, 11.769311) rotate(23.000000) translate(-12.181613, -11.769311) translate(2.681613, 3.269311)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-2"></g>
+                    <path d="M2.83520427,14.1597612 L9.25962779,3.22188813 L15.6849511,14.1597612 L2.83520427,14.1597612 Z M10.1567077,0.672252929 C9.78869796,0.0425823568 8.73055762,0.0425823568 8.36164814,0.672252929 L0.140365556,14.670042 C-0.0467885186,14.9848773 -0.0467885186,15.3748839 0.140365556,15.6897192 C0.323920513,16.0045545 0.66673639,16.2 1.03744542,16.2 L17.4827099,16.2 C17.853419,16.2 18.1953351,16.0045545 18.3797898,15.6897192 C18.5660441,15.3748839 18.5660441,14.9848773 18.3797898,14.670042 L10.1567077,0.672252929 Z" id="Fill-1" fill="#231F20" mask="url(#mask-2)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

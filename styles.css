@@ -1,0 +1,323 @@
+/*Import Local Fonts*/
+@font-face {
+  font-family: "Circular Std Black";
+  src:  url("CircularStdBlack/CircularStdBlack.woff2") format("woff2"),
+        url("CircularStdBlack/CircularStdBlack.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Circular Std Bold";
+  src:  url("CircularStdBold/CircularStdBold.woff2") format("woff2"),
+        url("CircularStdBold/CircularStdBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Circular Std Medium";
+  src:  url("CircularStdMedium/CircularStdMedium.woff2") format("woff2"),
+        url("CircularStdMedium/CircularStdMedium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Circular Std Book";
+  src:  url("CircularStdBook/CircularStdBook.woff2") format("woff2"),
+        url("CircularStdBook/CircularStdBook.woff") format("woff");
+}
+
+/*Default properties*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*Font default properties*/
+h1 {
+    font-family: "Circular Std Black";
+    text-transform: uppercase;
+    font-size: 36px;
+    line-height: 50px;
+    color: #000000;
+}
+
+h2 {
+    font-family: "Circular Std Black";
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 50px;
+    color: #000000;
+}
+
+h3 {
+    font-family: "Circular Std Bold";
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 48px;
+    color: #757575;
+}
+
+h4 {
+    font-family: "Circular Std Medium";
+    font-size: 18px;
+    line-height: 30px;
+    color: #757575;
+}
+
+p {
+    font-family: "Circular Std Book";
+    font-size: 18px;
+    line-height: 30px;
+    color: #757575;
+}
+
+
+/*Hero wrapper*/
+/*Wrapps all the hero content with max screen width/height*/
+#hero-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+    overflow:hidden
+}
+
+/*Defines the left width of the hero section*/
+#left-hero-wrapper {
+    padding-top: 10vh;
+    display: flex;
+    width: 45%;
+    justify-content: flex-end;
+}
+
+/*Defines content width in the left side of the hero section*/
+#pass-content-wrapper {
+    margin-right: 15%;
+    max-width: 600px;
+    width: 80%;
+}
+
+/*Form container*/
+#pass-details-form-continer {
+    margin-top: 40px;
+}
+
+
+#campus-logo-hero-container {
+    margin-bottom: 25px;
+    height: 20px;
+}
+
+#campus-logo-hero-container img {
+    height: 100%;
+}
+
+#pass-hero-p-info-container {
+    margin-top: 30px;
+}
+
+
+/*Text fields in the form*/
+.text-input-form {
+    font-family: "Circular Std Book";
+    font-size: 18px;
+    line-height: 25px;
+    color: #000000;
+    box-sizing: border-box;
+    height: 65px;
+    width: 457px;
+    border: 1.08px solid rgba(117,117,117,0.2);
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    padding-left: 30px; 
+}
+
+/*Selected field*/
+#first-name {
+    box-shadow: 14px 41px 54px 0 rgba(133,143,175,0.1);
+}
+
+#first-name, #last-name {
+    margin-bottom: 20px;
+}
+
+#university {
+    margin-bottom: 35px;
+}
+
+#form-submit-button {
+    /*Hide button label*/
+    font-size: 0px; 
+    text-transform: none;
+    height: 56px;
+    width: 249px;
+    background-image: url(assets/get-access-form-button.svg);
+    background-size: cover;
+    border: none;
+}
+
+/*Countdown Clock Properties*/
+
+#countdown-clock-wrapper {
+    margin-top: 45px;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+}
+
+.countdown-timestamp-container {
+    width: 25%;
+    text-align: center;
+}
+
+#days-container {
+    width: 15%;
+    text-align: left;
+}
+
+#days-container h3 {
+    padding-left: 5px
+}
+
+#shape-container-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: flex-end;
+    margin-bottom: 10%;
+}
+
+#right-hero-wrapper {
+    width: 55%;
+    display: flex;
+    justify-content: flex-end;
+    background-image: url(assets/campus-virtual-pass.png), url(assets/circle-hero-combined.svg);
+    background-size: 30%, cover;
+    background-position: 0%, calc(100% + 40px) calc(100% - 0px); 
+    background-repeat: no-repeat, no-repeat;
+}
+
+
+#image-flex-grid {
+    transform: rotate(-20deg);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#top-image {
+    background-image: url(assets/Skyline-Party.jpg);
+    margin-top: -20%;
+    margin-left: 20%;
+    width: 100%;
+    height: 35%;
+    border-radius: 10px;
+    box-shadow: -15px 15px 19px 0 rgba(0,0,0,0.25);
+}
+
+#two-column-grid {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3%;
+    margin-left: 20%;
+    height: 100%;
+    width: 100%;
+}
+
+#left-column-grid {
+    width: 35%;
+}
+
+#grid-image-2 {
+    background-image: url(assets/business-thumb-4.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 35%;
+    border-radius: 10px;
+    box-shadow: -15px 15px 19px 0 rgba(0,0,0,0.25);
+}
+
+#grid-image-4 {
+    margin-top: 10%;
+    margin-left: 30%;
+    background-image: url(assets/fire-frestival-shot.jpg);
+    background-size: cover;
+    width: 70%;
+    height: 40%;
+    border-radius: 10px;
+    box-shadow: -15px 15px 19px 0 rgba(0,0,0,0.25);
+}
+
+#right-column-grid {
+    width: 60%;
+}
+
+#grid-image-3 {
+    height: 40%;
+    width: 100%;
+    margin-left: 5%;
+    background-image: url(assets/200310%20FRAT-1.jpg);
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: -15px 15px 19px 0 rgba(0,0,0,0.25);
+}
+
+#grid-image-5 {
+    height: 30%;
+    width: 100%;
+    margin-left: 5%;
+    margin-top: 5%;
+    background-image: url(assets/Summer-75.jpg);
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: -15px 15px 19px 0 rgba(0,0,0,0.25);
+}
+
+#grid-image-6 {
+    height: 30%;
+    width: 50%;
+    margin-left: 5%;
+    margin-top: 5%;
+    background-image: url(assets/49089581_2158272054238013_1275622080234127360_n.jpg);
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: -15px 15px 19px 0 rgba(0,0,0,0.25);
+}
+
+#three-column-grid {
+    height: 40%;
+    width: 100%;
+}
+
+
+/*Client Logos Section*/
+
+#clients-section-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 70vh;
+    background-image: url(assets/curved-rectangle-1.svg);
+    background-size: cover;
+}
+
+#clients-wrapper {
+    align-self:center;
+    display: flex;
+    width: 100%;
+    max-width: 2000px;
+}
+
+.client-container {
+    display: flex;
+    flex-direction: row;
+    width: 25%;
+    justify-content: center;
+}
+
+.client-container img{
+    object-fit: contain;
+    width: 50%;
+    height: auto;
+}

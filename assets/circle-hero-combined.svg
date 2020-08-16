@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="917px" height="934px" viewBox="0 0 917 934" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 4</title>
+    <defs>
+        <path d="M894,0 L50.5122277,0 C8.96334093,249.221809 70.8918303,460.000553 236.297696,632.336231 C401.703561,804.671909 620.937663,886.33614 894,877.328924 L894,0 Z" id="path-1"></path>
+        <filter x="-4.3%" y="-3.2%" width="108.5%" height="108.3%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="1" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="8" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="10.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.109456949 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Events-Pass-Landing-Page" transform="translate(-1025.000000, 14.000000)">
+            <g id="Group-4" transform="translate(1026.000000, 0.000000)">
+                <path d="M11.6812237,0 C-28.30919,272.377252 34.3801259,494.673555 199.749171,666.88891 C365.118217,839.104266 596.53516,923.090275 894,918.84694" id="Path" stroke="#D3D3D3" stroke-width="2"></path>
+                <g id="Path">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use stroke="#D3D3D3" stroke-width="2" fill="#FAFAFC" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
