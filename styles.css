@@ -298,6 +298,7 @@ p {
     align-content: center;
     width: 100%;
     height: 70vh;
+    min-height: 1000px;
     background-image: url(assets/curved-rectangle-1.svg);
     background-size: cover;
 }
@@ -305,19 +306,83 @@ p {
 #clients-wrapper {
     align-self:center;
     display: flex;
+    flex-flow: row;
     width: 100%;
-    max-width: 2000px;
+    height: 40%;
+    max-width: 1800px;
 }
 
 .client-container {
+    min-width: 250px;
+    margin-left: 30px;
+    margin-right: 30px;
     display: flex;
     flex-direction: row;
     width: 25%;
+    height: 100%;
     justify-content: center;
+    background-color: aqua;
+    
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    box-shadow: -10px 10px 16px 0 rgba(0,0,0,0.04);
+}
+
+#client-container-1 {
+    margin-left: 0;
+}
+#client-container-4 {
+    margin-right: 0;
 }
 
 .client-container img{
     object-fit: contain;
     width: 50%;
     height: auto;
+}
+
+/*Virtual pass content section*/
+
+#whats-included-section-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+#whats-included-wrapper {
+    width: 100%;
+    max-width: 1800px;
+    display: flex;
+    flex-direction: row;
+}
+
+#whats-inluded-left-wrapper {
+    width: 70%;
+}
+
+#whats-inluded-left-wrapper img {
+    margin-top: -170px;
+    position: relative;
+    z-index: -1;
+}
+
+#whats-inluded-right-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#whats-included-content-container {
+    max-width: 800px;
+    align-self: center;
+}
+
+#whats-included-content-container h2, p {
+    margin-bottom: 20px;
+}
+
+#whats-included-content-container img {
+    width: 40px;
 }
