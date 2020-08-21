@@ -86,6 +86,11 @@ p {
     color: #757575;
 }
 
+/*Paragraph Link*/
+p a{
+    color: #D05C36;
+}
+
 
 /*Hero wrapper*/
 /*Wrapps all the hero content with max screen width/height*/
@@ -476,8 +481,8 @@ p {
 }
 
 #the-process-content-wrapper {
-    margin-top: 20vh;
-    margin-bottom: 20vh;
+    margin-top: 30vh;
+    margin-bottom: 35vh;
     width: 100%;
     height: auto;
     max-width: 1800px;
@@ -493,7 +498,7 @@ p {
     flex-grow: 1;
     display: flex;
     justify-content: center;
-    margin-bottom: 100px;
+    margin-bottom: 10vh;;
 }
 
 .process-container {
@@ -520,4 +525,97 @@ p {
 
 .process-container h5 {
     margin-bottom: 20px;
+}
+
+
+/*Meetup Platform Section*/
+
+#meetup-platform-section-wrapper {
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#meetup-platform-title-container {
+    max-width: 400px;
+    margin-bottom: 5vh;;
+    align-self: center;
+    text-align: center;
+}
+
+#meetup-platform-image-container {
+    align-self: center;
+}
+
+#meetup-platform-image-container img {
+    height: 100%;
+    width: 100%;
+}
+
+#meetup-platform-image-container-mobile {
+    display: none;
+}
+
+
+/*We Work With Section*/
+
+#we-work-with-section-wrapper {
+    padding-top: 30vh;
+    padding-bottom: 35vh;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: url(assets/we-work-with-background.svg);
+    background-size: cover;
+}
+
+#we-work-with-title-container {
+    margin-bottom: 8vh;;
+    width: 100%;
+    text-align: center;
+}
+
+.client-logo-contianer {
+    text-align: center;
+    width: 25%;
+    max-width: 350px;
+    min-width: 350px;
+}
+
+
+/*Footer*/
+
+#footer-content-container {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#footer-content-top, #footer-content-bottom {
+    text-align: center;
+    width: 100%;
+}
+
+#footer-content-top p {
+    color: #000000;
+    font-family: "Circular Std Medium";
+}
+
+#footer-content-bottom {
+    text-align: left;
+    width: 100%;
+    max-width: 1800px;
+}
+
+#footer-content-bottom p {
 }
