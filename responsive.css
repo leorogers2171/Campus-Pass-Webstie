@@ -1,0 +1,52 @@
+/*
+Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default in Bootstrap
+*/
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (max-width: 576px) {
+    /*Changing background to mobile variation*/
+    #we-work-with-section-wrapper {
+        background-image: url(assets/we-work-with-mobile-background.svg);
+        padding-top: 250px;
+        padding-bottom: 250px;
+    }
+    #we-work-with-title-container {
+        display: none;
+    }
+    /*Adapting footer*/
+    #footer-content-container {
+        padding-left: 5vw;
+        padding-right: 5vw;
+        padding-bottom: 50px;
+    }
+    
+    /*Change to mobile platform graphic*/
+    #meetup-platform-image-container {
+        display: none;
+    }
+    #meetup-platform-image-container-mobile {
+        display: flex;
+    }
+    
+    
+    /*Change the process section background to mobile*/
+    #the-process-section-wrapper {
+        background-image: url(assets/curved-rectangle-2-mobile.svg);
+    }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (max-width: 768px) {
+    
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (max-width: 992px) {
+    
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (max-width: 1200px) {
+    
+}

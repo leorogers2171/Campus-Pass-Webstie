@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="375px" height="872px" viewBox="0 0 375 872" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Rectangle</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Events-Pass-Mobile-Landing-Page" transform="translate(0.000000, -6599.000000)" fill="#FAFAFC">
+            <path d="M0,6615.34149 C72.1925134,6604.44716 129.010695,6611.10481 170.454545,6635.31442 C211.898396,6659.52403 280.080214,6647.41923 375,6599 L375,7456.0203 C295.454545,7475.99323 231.283422,7475.99323 182.486631,7456.0203 C133.68984,7436.04737 72.8609626,7438.77095 0,7464.19105 L0,6615.34149 Z" id="Rectangle" transform="translate(187.500000, 7035.000000) scale(-1, 1) translate(-187.500000, -7035.000000) "></path>
+        </g>
+    </g>
+</svg>

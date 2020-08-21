@@ -92,6 +92,15 @@ p a{
 }
 
 
+/*Default Wrapper Properties*/
+
+.top-level-wrapper {
+    
+}
+
+
+
+
 /*Hero wrapper*/
 /*Wrapps all the hero content with max screen width/height*/
 #hero-wrapper {
@@ -99,14 +108,14 @@ p a{
     flex-direction: row;
     flex-wrap: wrap;
     width: 100vw;
-    height: 100vh;
     overflow:hidden
 }
 
 /*Defines the left width of the hero section*/
 #left-hero-wrapper {
     flex-grow: 1;
-    padding-top: 10vh;
+    margin-top: 10vh;
+    margin-bottom: 20vh;
     display: flex;
     width: 45%;
     justify-content: flex-end;
@@ -565,7 +574,7 @@ p a{
 
 #we-work-with-section-wrapper {
     padding-top: 30vh;
-    padding-bottom: 35vh;
+    padding-bottom: 25vh;
     width: 100%;
     height: auto;
     display: flex;
@@ -587,6 +596,7 @@ p a{
     width: 25%;
     max-width: 350px;
     min-width: 350px;
+    padding-bottom: 100px;
 }
 
 
