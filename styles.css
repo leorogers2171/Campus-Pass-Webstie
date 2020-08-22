@@ -1,4 +1,5 @@
 /*Import Local Fonts*/
+/*
 @font-face {
   font-family: "Circular Std Black";
   src:  url("CircularStdBlack/CircularStdBlack.woff2") format("woff2"),
@@ -22,6 +23,19 @@
   src:  url("CircularStdBook/CircularStdBook.woff2") format("woff2"),
         url("CircularStdBook/CircularStdBook.woff") format("woff");
 }
+*/
+
+
+/*Importing Online Fonts*/
+@font-face {font-family: "Circular Std Book"; src: url("//db.onlinewebfonts.com/t/860c3ec7bbc5da3e97233ccecafe512e.eot"); src: url("//db.onlinewebfonts.com/t/860c3ec7bbc5da3e97233ccecafe512e.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/860c3ec7bbc5da3e97233ccecafe512e.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/860c3ec7bbc5da3e97233ccecafe512e.woff") format("woff"), url("//db.onlinewebfonts.com/t/860c3ec7bbc5da3e97233ccecafe512e.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/860c3ec7bbc5da3e97233ccecafe512e.svg#Circular Std Book") format("svg"); }
+
+@font-face {font-family: "Circular Std Bold"; src: url("//db.onlinewebfonts.com/t/961a181da27e7cbc072ec2fb5bbfe2a9.eot"); src: url("//db.onlinewebfonts.com/t/961a181da27e7cbc072ec2fb5bbfe2a9.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/961a181da27e7cbc072ec2fb5bbfe2a9.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/961a181da27e7cbc072ec2fb5bbfe2a9.woff") format("woff"), url("//db.onlinewebfonts.com/t/961a181da27e7cbc072ec2fb5bbfe2a9.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/961a181da27e7cbc072ec2fb5bbfe2a9.svg#Circular Std Bold") format("svg"); }
+
+@font-face {font-family: "Circular Std Black"; src: url("//db.onlinewebfonts.com/t/f1a22f6f15d272c7aa56da8b2c91f5e5.eot"); src: url("//db.onlinewebfonts.com/t/f1a22f6f15d272c7aa56da8b2c91f5e5.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/f1a22f6f15d272c7aa56da8b2c91f5e5.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/f1a22f6f15d272c7aa56da8b2c91f5e5.woff") format("woff"), url("//db.onlinewebfonts.com/t/f1a22f6f15d272c7aa56da8b2c91f5e5.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/f1a22f6f15d272c7aa56da8b2c91f5e5.svg#Circular Std Black") format("svg"); }
+
+@font-face {font-family: "Circular Std Medium"; src: url("//db.onlinewebfonts.com/t/9475d6a0b79c164f9f605673714e75d9.eot"); src: url("//db.onlinewebfonts.com/t/9475d6a0b79c164f9f605673714e75d9.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/9475d6a0b79c164f9f605673714e75d9.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/9475d6a0b79c164f9f605673714e75d9.woff") format("woff"), url("//db.onlinewebfonts.com/t/9475d6a0b79c164f9f605673714e75d9.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/9475d6a0b79c164f9f605673714e75d9.svg#Circular Std Medium") format("svg"); }
+
+
 
 /*Default properties*/
 * {
@@ -92,12 +106,6 @@ p a{
 }
 
 
-/*Default Wrapper Properties*/
-
-.top-level-wrapper {
-    
-}
-
 
 
 
@@ -108,11 +116,12 @@ p a{
     flex-direction: row;
     flex-wrap: wrap;
     width: 100vw;
-    overflow:hidden
+    overflow:hidden;
 }
 
 /*Defines the left width of the hero section*/
 #left-hero-wrapper {
+    min-width: 500px;
     flex-grow: 1;
     margin-top: 10vh;
     margin-bottom: 20vh;
@@ -211,23 +220,17 @@ p a{
     padding-left: 5px
 }
 
-#shape-container-1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-content: flex-end;
-    margin-bottom: 10%;
-}
+
+/*Right Hero Graphic*/
+/*Image Grid*/
 
 #right-hero-wrapper {
     flex-grow: 1;
-    min-width: 500px;
     width: 55%;
     display: flex;
-    justify-content: flex-end;
     background-image: url(assets/campus-virtual-pass.png), url(assets/circle-hero-combined.svg);
     background-size: 30%, cover;
-    background-position: 0%, calc(100% + 40px) calc(100% - 0px); 
+    background-position: 0%, calc(-3vh + 40px) calc(100% - 0px);
     background-repeat: no-repeat, no-repeat;
 }
 
@@ -328,13 +331,13 @@ p a{
 /*Client Logos Section*/
 
 #clients-section-wrapper {
+    padding-top: 25vh;
+    padding-bottom: 20vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-content: center;
     width: 100%;
-    height: 70vh;
-    min-height: 1000px;
     background-image: url(assets/curved-rectangle-1.svg);
     background-size: cover;
 }
@@ -342,38 +345,39 @@ p a{
 #clients-wrapper {
     align-self:center;
     display: flex;
+    justify-content: center;
     flex-direction: row;
-    flex-wrap: wrap;
     width: 100%;
-    height: 40%;
     max-width: 1800px;
 }
 
 .client-container {
-    min-width: 380px;
-    margin-left: 30px;
-    margin-right: 30px;
+    width: 25%;
+    margin-bottom: 80px;
+    margin-right: 25px;
+    margin-left: 25px;
     display: flex;
     flex-direction: row;
-    width: calc(25% - 60px);
-    height: 100%;
+    width: calc(25% - 50px;);
     justify-content: center;
     background-color: aqua;
-    
+    height: 30vh;
     border-radius: 10px;
     background-color: #FFFFFF;
     box-shadow: -10px 10px 16px 0 rgba(0,0,0,0.04);
 }
 
 #client-container-1 {
-    margin-left: 0;
+    margin-left: 0px;
 }
+
 #client-container-4 {
-    margin-right: 0;
+    margin-right: 0px;
 }
 
 .client-container img{
     object-fit: contain;
+    height: 100%;
     width: 50%;
     height: auto;
 }
@@ -391,22 +395,22 @@ p a{
     width: 100%;
     max-width: 1800px;
     display: flex;
-    flex-direction: row;
     flex-flow: row wrap;
 }
 
 #whats-inluded-left-wrapper {
+    display: flex;
     width: 40%;
 }
 
 #whats-inluded-left-wrapper img {
-    margin-top: -170px;
+    margin-top: -200px;
     position: relative;
     z-index: -1;
 }
 
 #whats-inluded-right-wrapper {
-    min-width: 500px;
+    flex-grow: 1;
     width: 60%;
     display: flex;
     flex-direction: row;
@@ -440,16 +444,16 @@ p a{
     width: 100%;
     max-width: 1800px;
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
 }
 
 #be-quick-left-wrapper {
-    min-width: 500px;
+    margin-right: 5vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 50%;
-    padding-right: 10%;
+    width: calc(50% - 10vw);
 }
 
 
@@ -467,8 +471,7 @@ p a{
 
 
 #be-quick-right-wrapper {
-    min-width: 400px;
-    width: 45%;
+    width: 50%;
 }
 
 #be-quick-right-wrapper img {
@@ -560,12 +563,13 @@ p a{
     align-self: center;
 }
 
-#meetup-platform-image-container img {
+#meetup-platform-image-container img, #meetup-platform-image-container img {
     height: 100%;
     width: 100%;
 }
 
 #meetup-platform-image-container-mobile {
+    align-self: center;
     display: none;
 }
 
@@ -605,6 +609,8 @@ p a{
 #footer-content-container {
     padding-top: 150px;
     padding-bottom: 150px;
+    padding-left: 15vw;
+    padding-right: 15vw;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -624,8 +630,13 @@ p a{
 #footer-content-bottom {
     text-align: left;
     width: 100%;
-    max-width: 1800px;
 }
 
-#footer-content-bottom p {
+/*Disable Mobile Pass Graphic*/
+#right-hero-wrapper-mobile {
+    display: none;
+}
+
+#right-hero-wrapper-mobile img {
+    width: 100%;
 }

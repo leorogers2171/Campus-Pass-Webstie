@@ -39,14 +39,133 @@ No media query for `xs` since this is the default in Bootstrap
 /*Medium devices (tablets, 768px and up)*/
 @media (max-width: 768px) {
     
+    /*Client Container Alignment*/
+    .client-container {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    
+    /*Client Section Wrapper*/
+    #clients-section-wrapper {
+        padding-top: 40vh;
+        padding-bottom: 20vh;
+    }
+    
 }
 
 /*Large devices (desktops, 992px and up)*/
 @media (max-width: 992px) {
     
+    /*Break what's included section onto a new line*/
+    #whats-inluded-right-wrapper, #whats-inluded-left-wrapper {
+        width: 100%;
+    }
+    
+    #be-quick-left-wrapper, #be-quick-right-wrapper {
+        width: 100%;
+    }
+    
+     /*Client Section Wrapper Mobile Background*/
+    #clients-section-wrapper {
+        background-image: url(assets/client-logos-background-mobile.svg);
+    }
+    
+    /*Events Pass Graphic Top Spacing*/
+    #whats-inluded-left-wrapper img {
+        margin-top: -80px;
+    }
+    
+    /*Justify past graphic to centre of the screen*/
+    #whats-inluded-left-wrapper {
+        justify-content: center;
+    }
+    
+    /*Set what's included content to expand full width*/
+    #whats-included-content-container {
+        max-width: none;
+    }
+    
+    /*Add extra spacing to rotating graphic*/
+    #be-quick-wrapper, #be-quick-content-container, #whats-included-content-container {
+        margin-top: 50px;
+    }
+
 }
+
+/*Hero custom breakpoint*/
+/*Based on font sizing and spacing avaliable*/
+@media (max-width: 1112px) {
+    #right-hero-wrapper {
+        display: none;
+    }
+    #right-hero-wrapper-mobile {
+        z-index: -1;
+        position: relative;
+        display: flex;
+    }
+    
+    #left-hero-wrapper {
+        margin-bottom: 100px;;
+    }
+    
+    #clients-section-wrapper {
+        margin-top: -230px;
+    }
+    
+    #left-hero-wrapper {
+        margin-top: 80px;
+    }
+    
+}
+
 
 /*Extra large devices (large desktops, 1200px and up)*/
 @media (max-width: 1200px) {
     
+    #pass-content-wrapper {
+        max-width: none;
+        margin-right: 0;
+    }
+    
+    /*Client Container Wrap*/
+    #clients-wrapper {
+        flex-wrap: wrap;
+    }
+    .client-container {
+        width: auto;
+        height: 400px;
+        min-width: 410px;
+    }
+    
+    /*Client Container Alignment*/
+    #client-container-2 {
+        margin-right: 0px;
+    }
+    #client-container-3 {
+        margin-left: 0px;
+    }
+}
+
+/*Campus Pass Keep Scaled*/
+@media (max-width: 1800px) {
+    
+    /*Add left and right margin to content*/
+    #clients-section-wrapper, #left-hero-wrapper {
+        padding-left: 4vw;
+        padding-right: 4vw;
+    }
+    
+    #whats-included-wrapper, #be-quick-wrapper {
+        padding-left: 4vw;
+        padding-right: 4vw;
+    }
+    
+    
+}
+
+@media (max-width: 1800px) and (min-width: 1200px) {
+    /*Events Pass Graphic Top Spacing*/
+    #whats-inluded-left-wrapper img {
+        margin-top: -260px;
+    }
 }
