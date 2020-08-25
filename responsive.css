@@ -5,6 +5,40 @@ No media query for `xs` since this is the default in Bootstrap
 
 /*Small devices (landscape phones, 576px and up)*/
 @media (max-width: 576px) {
+    /*Update font sizes*/
+    h1 {
+        font-size: 25px;
+        line-height: 35px;
+    }
+    h2 {
+        font-size: 20px;
+        line-height: 20px;
+    }
+    h3 {
+        font-size: 22px;
+        line-height: 40px;
+    }
+    h4 {
+        font-size: 16px;
+        line-height: 28px;
+    }
+    h5 {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    h6 {
+        font-size: 170px;
+        line-height: 215px;
+    }
+    p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .text-input-form {
+        font-size: 16px;
+        line-height: 25px;
+    }
+    
     /*Changing background to mobile variation*/
     #we-work-with-section-wrapper {
         background-image: url(assets/we-work-with-mobile-background.svg);
@@ -28,12 +62,21 @@ No media query for `xs` since this is the default in Bootstrap
     #meetup-platform-image-container-mobile {
         display: flex;
     }
-    
-    
     /*Change the process section background to mobile*/
     #the-process-section-wrapper {
         background-image: url(assets/curved-rectangle-2-mobile.svg);
     }
+    
+    /*Remove Min Device Widths*/
+    #left-hero-wrapper, .text-input-form{
+        min-width: 0px;
+        width: 100%;
+    }
+    
+    .client-container {
+        min-width: 94vw;
+    }
+    
 }
 
 /*Medium devices (tablets, 768px and up)*/
@@ -133,8 +176,7 @@ No media query for `xs` since this is the default in Bootstrap
     }
     .client-container {
         width: auto;
-        height: 400px;
-        min-width: 410px;
+        height: 50vh;
     }
     
     /*Client Container Alignment*/
@@ -167,5 +209,12 @@ No media query for `xs` since this is the default in Bootstrap
     /*Events Pass Graphic Top Spacing*/
     #whats-inluded-left-wrapper img {
         margin-top: -260px;
+    }
+}
+
+@media (max-width: 1200px) and (min-width: 576px) {
+    /*Stop min width being activated on mobile < 415px*/
+    .client-container {
+        min-width: 415px;
     }
 }
