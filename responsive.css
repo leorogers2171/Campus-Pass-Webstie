@@ -38,6 +38,12 @@ No media query for `xs` since this is the default in Bootstrap
         font-size: 16px;
         line-height: 25px;
     }
+    #pass-main-info h3{
+        font-size: 20px;
+        font-family: 'Circular Std book';
+        letter-spacing: 0.3px;
+        text-transform: none;
+    }
     
     /*Changing background to mobile variation*/
     #we-work-with-section-wrapper {
@@ -53,6 +59,17 @@ No media query for `xs` since this is the default in Bootstrap
         padding-left: 5vw;
         padding-right: 5vw;
         padding-bottom: 50px;
+    }
+    
+    /*Reduce logo size*/
+    #campus-logo-hero-container {
+        height: 15px;
+    }
+    
+    
+    /*Reduce top margin spacing in hero section*/
+    #left-hero-wrapper {
+        margin-top: 20px;
     }
     
     /*Change to mobile platform graphic*/
@@ -90,7 +107,7 @@ No media query for `xs` since this is the default in Bootstrap
     
     /*Client Section Wrapper*/
     #clients-section-wrapper {
-        padding-top: 40vh;
+        padding-top: 30vw;
         padding-bottom: 20vh;
     }
     
@@ -154,16 +171,11 @@ No media query for `xs` since this is the default in Bootstrap
     #clients-section-wrapper {
         margin-top: -230px;
     }
-    
-    #left-hero-wrapper {
-        margin-top: 80px;
-    }
-    
 }
 
 
 /*Extra large devices (large desktops, 1200px and up)*/
-@media (max-width: 1200px) {
+@media (max-width: 1350px) {
     
     #pass-content-wrapper {
         max-width: none;
@@ -216,5 +228,13 @@ No media query for `xs` since this is the default in Bootstrap
     /*Stop min width being activated on mobile < 415px*/
     .client-container {
         min-width: 415px;
+    }
+}
+
+@media (max-width: 1112px) and (min-width: 576px) {
+    /*Hero section top padding*/
+    /*Keep padding applied not on mobile*/
+    #left-hero-wrapper {
+        margin-top: 80px;
     }
 }

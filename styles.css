@@ -161,14 +161,15 @@ p a{
 }
 
 #form-submit-button {
-    /*Hide button label*/
-    font-size: 0px; 
-    text-transform: none;
     height: 56px;
     width: 249px;
-    background-image: url(assets/get-access-form-button.svg);
+    background-image: url(assets/get-access-form-button-revised.svg);
     background-size: cover;
     border: none;
+}
+
+#form-submit-button text {
+    display: none;
 }
 
 /*Countdown Clock Properties*/
