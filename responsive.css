@@ -63,7 +63,7 @@ No media query for `xs` since this is the default in Bootstrap
     
     /*Reduce logo size*/
     #campus-logo-hero-container {
-        height: 15px;
+        height: 11px;
     }
     
     
@@ -92,6 +92,12 @@ No media query for `xs` since this is the default in Bootstrap
     
     .client-container {
         min-width: 94vw;
+    }
+    
+    /*Reduce spacing of what's the process container*/
+    #the-process-content-wrapper {
+        margin-top: 20vh;
+        margin-bottom: 25vh; 
     }
     
 }
